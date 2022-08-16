@@ -1,0 +1,165 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+body *{
+    box-sizing: border-box;
+}
+
+
+.media-microsite{
+    width: 100vw;
+    height: 100vh;
+    background: #00ff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.suits-microsite{
+    width: 25vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.card{
+    width: 270px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 1.5px 11.5px #26395338;
+}
+
+.topCard{
+    padding: 5px;
+    padding-top: 0px;
+}
+
+.mediaCard-01{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 6px;
+    scroll-padding: 24px;
+}
+.mediaCard-01>img{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.mediaCard-03{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 6px;
+    scroll-padding: 24px;
+}
+.mediaCard-03>img{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.mediaCard-04{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 6px;
+    scroll-padding: 24px;
+}
+.mediaCard-04>img{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.mediaCard-05{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 6px;
+    scroll-padding: 24px;
+}
+.mediaCard-05>img{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.title{
+    color: #2b134b;
+    margin: 10px;
+}
+.secondText{
+    color: #450994;
+}
+.bottonTex01{
+    color: #2b134b;
+}
+.bottonTex02{
+    color: #2b134b;
+    font-weight: 600;
+    font-size: 10pt;
+}
+.bottonCard{
+    padding: 10px;
+}
+.actionsCard > a{
+    width: 100%;
+}
+.actions{
+    width: 100%;
+    padding: 8px 0px;
+    margin: 1.5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #2b134b;
+    padding: 0.7em;
+    letter-spacing: .9px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: .1px solid #e8e8e8;
+    transition: all .2s;
+    box-shadow: 3px 3px 6px #c5c5c5,
+    -3px -3px 6px #fff;
+}
+.actions:hover{
+    box-shadow: -3px -3px 6px #c5c5c5,
+                 3px 3px 6px #fff;
+}
+
+@media only screen and (max-width:375px){
+    .media-microsite{
+        flex-direction: column;
+        height: 100%;
+    }
+    .suits-microsite{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    
+    }
+
+
+}

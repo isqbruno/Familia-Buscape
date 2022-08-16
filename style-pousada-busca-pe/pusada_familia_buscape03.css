@@ -1,0 +1,141 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+body *{
+    box-sizing: border-box;
+}
+
+.bootom-microsite{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------------------------Coluna da Esquerca*/
+.left-columnText{
+    width: 33.3vw;
+    height: 100vh;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    flex-direction: column;
+    padding: 15px;
+}
+.left-columnText>h1{
+    font-size: 20pt;
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+}
+.left-columnText>img{
+    height: 23%;
+}
+.left-columnText>ul{
+    font-size: 9pt;
+    margin: 5px;
+    color: #fff;
+}
+.left-columnText>ul>h3{
+    font-size: 13pt;
+    margin: 6px;
+    color: #00ff88;
+}
+
+/*--------------------------------------------------*/
+/*------------------------------------Coluna do Meio*/
+.mid-columnText{
+    width: 33.3vw;
+    height: 100vh;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    flex-direction: column;
+    padding: 15px;
+}
+.mid-columnText>ul{
+    font-size: 9pt;
+    margin: 10px;
+    color: #fff;
+}
+.mid-columnText>ul>h3{
+    font-size: 13pt;
+    margin: 5px;
+    color: #00ff88;
+}
+.mid-columnText>img{
+    margin-top: 40px;
+}
+/*--------------------------------------------------*/
+/*---------------------------------Coluna da Direita*/
+.right-columnText{
+    width: 33.3vw;
+    height: 100vh;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    flex-direction: column;
+    padding: 15px;
+}
+.right-columnText>ul{
+    font-size: 9pt;
+    margin: 10px;
+    color: #fff;
+}
+.right-columnText>ul>h3{
+    font-size: 13pt;
+    margin: 5px;
+    color: #00ff88;
+}
+.title-pizzaria{
+    color: #00ff88;
+    text-align: center;
+}
+.right-columnText>ul>h1{
+    color: #00ff88;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+.right-columnText>ul>p{
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+}
+.img{
+    position: relative;
+    top: 5px;
+    text-align: center;
+    height: 20px;
+}
+.delivery{
+    width: 90%;
+    text-align: center;
+}
+.right-ul{
+    text-align: none;
+}
+/*--------------------------------------------------*/
+
+@media only screen and (max-width:375px){
+    .bootom-microsite{
+        flex-direction: column;
+        height: 100%;
+    }
+    .left-columnText{
+        width: 100%;
+    }
+    .mid-columnText{
+        width: 100%;
+    }
+    .right-columnText{
+        width: 100%;
+    }
+
+}

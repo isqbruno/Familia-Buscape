@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+body *{
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------------Topo do Site*/
+.main-microsite{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-microsite { /*-----------------Lado esquero do topo*/
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.left-microsite > h1{
+    color: #77ffc0;
+    font-size: 2.5vw;
+}
+.left-microsite > h2{
+    color: #77ffc0;
+    font-size: 2vw;
+}
+.left-microsite > p{
+    color: #fff;
+    font-size: 1.3vw;
+}
+
+.left-microsite-img{
+    height: 40vh;
+}
+
+.right-microsite{ /*-----------------Lado direito do topo*/
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-contato{/*CCard de contato com botões*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 15px;
+    /*padding: 10px 55px;*/
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px #00000056;
+}
+.card-contato>h1{
+    color: #00ff88;
+    font-weight: 700; 
+    letter-spacing: 2px;
+}
+
+.link-microsite{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration:none;/* para tira o sublinhado do link*/
+}
+
+.btn-contato{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase; /*todas as letras maúsculas*/
+    font-weight: 900;
+    letter-spacing: 3px; /*espalamento entre as letras*/
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer; /* mudar forma do cursor*/
+    box-shadow: 0px 10px 40px -12px #00ff8052; /*spread quarto valor do box-shandow e o espalhamento*/
+
+}
+.btn-contato > img{
+    width: 38px;
+    position: relative;
+    top: 4px;
+    padding: 0px 8px;
+}
+
+
+@media only screen and (max-width:375px){
+
+    .main-microsite{
+        flex-direction: column;
+        height: 130vh;
+    }
+/*--------------------------------topo da tela*/
+    .left-microsite{
+        width: 100%;
+        height: 50vh;
+        padding: 8px;
+    }
+    .left-microsite-img{
+        height: 40%;
+    }
+    .left-microsite>h1{
+        font-size: 17pt;
+        margin: 5px;
+    }
+    .left-microsite>h2{
+        font-size: 15pt;
+        margin: 5px;
+    }
+    .left-microsite>p{
+        font-size: 9pt;
+        text-align: justify;
+        line-height:  18px;
+        margin: 5px;
+    }
+/*--------------------------------------------*/
+/*--------------------------------Baixo da tela*/   
+    .right-microsite{
+        width: 100%;
+        height: 80vh;
+        padding: 8px;
+    }
+    .card-login{
+        height: 90%;
+    }
+    .card-contato>h1{
+        color: #00ff88;
+        font-weight: 700; 
+        letter-spacing: 2px;
+        font-size: 15pt;
+    }
+    .link-microsite{
+        width: 100%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration:none;/* para tira o sublinhado do link*/
+    }
+    .btn-contato{
+        width: 100%;
+        padding: 16px 0px;
+        margin: 5px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        text-transform: uppercase; /*todas as letras maúsculas*/
+        font-weight: 900;
+        letter-spacing: 3px; /*espalamento entre as letras*/
+        color: #2b134b;
+        background: #00ff88;
+        cursor: pointer; /* mudar forma do cursor*/
+        box-shadow: 0px 10px 40px -12px #00ff8052; /*spread quarto valor do box-shandow e o espalhamento*/
+    
+}
+/*--------------------------------------------*/
+}

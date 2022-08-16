@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+body *{
+    box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------Rodape do Site*/
+.baseboard-microsite{
+    width: 100vw;
+    height: 10vh;
+    background: #00ff88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-info{
+    width: 20vw;
+    height: 10vh;
+    padding: 8px;
+    font-size: 9pt;
+    text-align: center;
+
+}
+.left-info>h1{
+    margin: 0;
+}
+.mid-info{
+    width: 20vw;
+    height: 10vh;
+    padding: 9px;
+    font-size: 8.5pt;
+}
+.mid-info>p{
+    font-weight: 550;
+    margin: 0;
+}
+
+.right-info{
+    width: 60vw;
+    height: 10vh;
+    padding: 9px;
+    font-size: 8.5pt;
+    text-align: justify;
+
+}
+.right-info>p{
+    font-weight: 550;
+
+}
+@media only screen and (max-width:375px){
+    .baseboard-microsite{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .left-info{
+        width: 100%;
+        height: auto;
+
+    }
+    .mid-info{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .right-info{
+        width: 100%;
+        height: auto;
+        text-align: justify;
+    }
+    .right-info>p{
+        margin: 0;
+
+    }
+
+}
